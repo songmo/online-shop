@@ -1,0 +1,10 @@
+<div class="product-list">
+  <div class="d-flex flex-wrap" style="margin-right: 80px; margin-left: 80px">
+    <div *ngFor="let product of products" class="product"
+         (click)="onClickNavigateToDetails(product.id)">
+      <img src="{{product.imageUrl}}" class="product-image">
+      <p class="product-name d-flex justify-content-center">{{product.name}}</p>
+      <p class="product-price d-flex justify-content-center">{{product.price}} EUR</p>
+    </div>
+  </div>
+</div>

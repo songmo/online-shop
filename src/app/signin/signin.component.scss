@@ -1,0 +1,23 @@
+.singin-container {
+  width: 400px;
+}
+
+.signin-form-border {
+  padding: 20px;
+  border: 1px #ddd solid;
+  border-radius: 4px;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-text {
+  text-align: center;
+  border-bottom: 1px #ddd solid;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  height: 15px;
+}
+

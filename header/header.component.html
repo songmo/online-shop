@@ -1,0 +1,59 @@
+<div class="header">
+  <div class="header-navbar-oben">
+    <div class="row d-flex align-items-center">
+      <div class="col-2">
+        <div>Logo</div>
+      </div>
+      <div class="col-6">
+        <div class="nav-search">
+          <mat-form-field appearance="fill" class="search-input">
+            <mat-label>Input</mat-label>
+            <input matInput>
+            <mat-icon matSuffix></mat-icon>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-4">
+        <ul>
+          <li><a routerLink="/signin-component">Anmelden</a></li>
+          <li><a href="#home">Sprache</a></li>
+          <li><a href="#home">Warenkorb</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header-navbar-unten">
+    <div class="d-flex align-items-center">
+      <div class="header-navbar-unten-link">
+        <button mat-button class="burger-menu-btn" (click)="onClickOpenOverlayMenu()">menu</button>
+      </div>
+      <div class="header-navbar-below-center">
+        <ul>
+          <li><a routerLink="/">Home</a></li>
+          <li><a href="#home">Epices</a></li>
+          <li><a href="#home">test1</a></li>
+          <li><a href="#home">test2</a></li>
+        </ul>
+      </div>
+      <div class="header-navbar-below-right">
+
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="showOverlay" class="showOverlay"></div>
+<div class="overlay-menu-left" *ngIf="showOverlay">
+  <div class="overlay-content">
+    <div class="overlay-header d-flex align-items-center justify-content-between">
+      <h4>Hallo Claire</h4>
+      <button mat-icon-button (click)="onClickCloseOverlayMenu()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+    <div class="overlay-body">
+      <p>My menu</p>
+    </div>
+  </div>
+</div>
+
+

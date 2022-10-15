@@ -1,0 +1,22 @@
+<div class="singin-container mx-auto my-3">
+  <div class="signin-form-border">
+    <h1 class="text-center mb-4">Anmelden</h1>
+    <form [formGroup]="form" (ngSubmit)="save(form)" class="signin-form">
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your password</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <button mat-button color="primary">Weiter</button>
+    </form>
+  </div>
+  <div class="line-text">
+    <span style="background-color: white; padding-right: 13px; padding-left: 13px;">Sind Sie neu hier?</span>
+  </div>
+  <button mat-button color="primary" style="width: 100%">Registrieren</button>
+</div>
+
+
