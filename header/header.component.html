@@ -9,7 +9,14 @@
           <mat-form-field appearance="fill" class="search-input">
             <mat-label>Input</mat-label>
             <input matInput>
-            <mat-icon matSuffix></mat-icon>
+            <button
+              aria-label="Clear"
+              disableRipple
+              mat-icon-button
+              matSuffix
+            >
+              <mat-icon name="ic_clear_24"></mat-icon>
+            </button>
           </mat-form-field>
         </div>
       </div>
@@ -41,11 +48,11 @@
     </div>
   </div>
 </div>
-<div *ngIf="showOverlay" class="showOverlay"></div>
+<div *ngIf="showOverlay" class="showOverlay" (click)="onClickCloseOverlayMenu()"></div>
 <div class="overlay-menu-left" *ngIf="showOverlay">
   <div class="overlay-content">
     <div class="overlay-header d-flex align-items-center justify-content-between">
-      <h4>Hallo Claire</h4>
+      <h4 class="overlay-header-title">Hallo Claire</h4>
       <button mat-icon-button (click)="onClickCloseOverlayMenu()">
         <mat-icon>close</mat-icon>
       </button>
