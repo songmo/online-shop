@@ -36,7 +36,7 @@ export class ProductListComponent implements OnInit {
 
   public onClickNavigateToDetails(productId: number) {
     console.log('id', productId);
-    this.router.navigate(['/detail', productId]);
+    this.router.navigate(['/product/detail', productId]);
   }
 
 }

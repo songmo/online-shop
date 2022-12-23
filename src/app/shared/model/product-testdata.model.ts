@@ -10,4 +10,8 @@ export class ProductListTestdataModel {
     list.imageUrl = imageUrl;
     return list;
   }
+
+  public static getProductDetailsTestdata(description: string) {
+
+  }
 }

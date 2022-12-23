@@ -22,6 +22,12 @@ export class BackendMockDataInterceptor implements HttpInterceptor {
           ]
         }));
       }
+      if (req.url.endsWith('/product/detail/1')) {
+        return of(new HttpResponse({
+          status: 200, body: []
+        }));
+
+      }
       return next.handle(req);
     }));
   }
